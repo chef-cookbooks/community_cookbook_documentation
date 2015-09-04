@@ -140,13 +140,6 @@ operating systems as you, so it is helpful to be clear about your use
 case and change so they can understand it even when it doesn't apply
 to them.
 
-### GitHub and Pull Requests
-
-All of Chef's open source cookbook projects are available on
-GitHub at either
-[http://www.github.com/chef-cookbooks](http://www.github.com/chef-cookbooks) or
-[http://www.github.com/opscode-cookbooks](http://www.github.com/opscode-cookbooks).
-
 ### More information
 
 Additional help with git is available on the [Community
