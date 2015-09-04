@@ -1,20 +1,15 @@
 # Contributing to Chef Software Cookbooks
 
-We are glad you want to contribute to Chef Software Cookbooks! The first
+We're glad you want to contribute to Chef Software Cookbooks! The first
 step is the desire to improve the project.
 
-You can find additional information about
-[contributing to cookbooks](https://docs.chef.io/community_contributions.html)
-on the Chef Docs site.
+## Quick Contributing Steps
 
-## Quick-contribute
-
-* Create an account on [GitHub](http://github.com).
+* Create an account on [GitHub](https://github.com).
 * Create an account on the [Chef Supermarket](https://supermarket.chef.io/).
 * [Become a contributor](https://supermarket.chef.io/become-a-contributor) by
 signing our Contributor License Agreement (CLA).
-* Create a [pull request for your change on
-GitHub](https://github.com/opscode-cookbooks/aws/pulls).
+* Create a pull request for your change on [GitHub](https://github.com).
 
 We try to regularly review contributions and will get back to you if we have
 any suggestions or concerns.
