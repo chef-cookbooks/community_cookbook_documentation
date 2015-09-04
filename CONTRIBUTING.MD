@@ -10,7 +10,7 @@ step is the desire to improve the project.
 3. [Become a contributor](https://supermarket.chef.io/become-a-contributor) by
 signing our Contributor License Agreement (CLA).
 4. Create a pull request for your change on [GitHub](https://github.com).
-5. The Chef Community team will review your change and merge the change or offer suggestions / concerns.
+5. The Chef Community team will review your change, and either merge the change or offer suggestions.
 
 
 ## The Apache License and the CLA/CCLA
