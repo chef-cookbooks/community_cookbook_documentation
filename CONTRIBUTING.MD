@@ -10,40 +10,68 @@ step is the desire to improve the project.
 3. [Become a contributor](https://supermarket.chef.io/become-a-contributor) by
 signing our Contributor License Agreement (CLA).
 4. Create a pull request for your change on [GitHub](https://github.com).
+5. The Chef Community team will review your change and merge the change or offer suggestions / concerns.
 
-We try to regularly review contributions and will get back to you if we have
-any suggestions or concerns.
 
 ## The Apache License and the CLA/CCLA
+Licensing is very important to open source projects. It helps ensure the
+  software continues to be available under the terms that the author desired.
 
-Licensing is very important to open source projects, it helps ensure
-the software continues to be available under the terms that the author
-desired. Chef uses the Apache 2.0 license to strike a balance between
-open contribution and allowing you to use the software however you
-would like to.
+Chef uses [the Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0)
+  to strike a balance between open contribution and allowing you to use the
+  software however you would like to.
 
-The license tells you what rights you have that are provided by the
-copyright holder. It is important that the contributor fully
-understands what rights they are licensing and agrees to them.
-Sometimes the copyright holder isn't the contributor, most often when
-the contributor is doing work for a company.
+The license tells you what rights you have that are provided by the copyright holder.
+  It is important that the contributor fully understands what rights they are
+  licensing and agrees to them. Sometimes the copyright holder isn't the contributor,
+  most often when the contributor is doing work for a company.
 
-To make a good faith effort to ensure these criteria are met, Chef
-Software Inc requires a Contributor License Agreement (CLA) or a Corporate
-Contributor License Agreement (CCLA) for all contributions. This is
-without exception due to some matters not being related to copyright
-and to avoid having to continually check with our lawyers about small
-patches.
+To make a good faith effort to ensure these criteria are met, Chef requires an Individual CLA
+  or a Corporate CLA for contributions. This agreement helps ensure you are aware of the
+  terms of the license you are contributing your copyrighted works under, which helps to
+  prevent the inclusion of works in the projects that the contributor does not hold the rights
+  to share.
 
-It only takes a few minutes to complete a CLA, and you retain the
-copyright to your contribution.
+It only takes a few minutes to complete a CLA, and you retain the copyright to your contribution.
 
-You can complete our contributor license agreement (CLA)
-[ online at the Chef Supermarket](https://supermarket.chef.io).
-If you're contributing on behalf of your employer, have your employer
-fill out our
-[Corporate Contributor License Agreement
-(CCLA)](https://supermarket.chef.io/ccla-signatures/new) instead.
+You can complete our
+  [Individual CLA](https://supermarket.getchef.com/icla-signatures/new) online.
+  If you're contributing on behalf of your employer and they retain the copyright for your works,
+  have your employer fill out our
+  [Corporate CLA](https://supermarket.getchef.com/ccla-signatures/new) instead.
+
+### Chef Obvious Fix Policy
+
+Small contributions such as fixing spelling errors, where the content is small enough
+  to not be considered intellectual property, can be submitted by a contributor as a patch,
+  without a CLA.
+
+As a rule of thumb, changes are obvious fixes if they do not introduce any new functionality
+  or creative thinking. As long as the change does not affect functionality, some likely
+  examples include the following:
+
+* Spelling / grammar fixes
+* Typo correction, white space and formatting changes
+* Comment clean up
+* Bug fixes that change default return values or error codes stored in constants
+* Adding logging messages or debugging output
+* Changes to ‘metadata’ files like Gemfile, .gitignore, build scripts, etc.
+* Moving source files from one directory or package to another
+
+**Whenever you invoke the “obvious fix” rule, please say so in your commit message:**
+
+```
+------------------------------------------------------------------------
+commit 370adb3f82d55d912b0cf9c1d1e99b132a8ed3b5
+Author: danielsdeleo <dan@opscode.com>
+Date:   Wed Sep 18 11:44:40 2013 -0700
+
+  Fix typo in config file docs.
+
+  Obvious fix.
+
+------------------------------------------------------------------------
+```
 
 ## Ticket Tracker (GitHub Issues)
 
