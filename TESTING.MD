@@ -1,13 +1,9 @@
 yum Cookbook TESTING doc
 ========================
 
-Bundler
--------
-A ruby environment with Bundler installed is a prerequisite for using
-the testing harness shipped with this cookbook. At the time of this
-writing, it works with Ruby 2.0 and Bundler 1.5.3. All programs
-involved, with the exception of Vagrant, can be installed by cd'ing
-into the parent directory of this cookbook and running "bundle install"
+Testing Prerequisites
+---------------------
+Chef cookbooks requires working ChefDK installations in order to provide an up-to-date Ruby and various testing tools
 
 Rakefile
 --------
