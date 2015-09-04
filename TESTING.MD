@@ -1,9 +1,11 @@
-yum Cookbook TESTING doc
-========================
+Cookbook TESTING doc
+====================
 
 Testing Prerequisites
 ---------------------
-Chef cookbooks requires working ChefDK installations in order to provide an up-to-date Ruby and various testing tools
+Chef cookbooks requires working ChefDK installations in order to provide an up-to-date Ruby and various testing tools.
+
+ChefDK can be downloaded at https://downloads.chef.io/chef-dk/
 
 Rakefile
 --------
