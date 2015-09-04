@@ -73,17 +73,33 @@ Date:   Wed Sep 18 11:44:40 2015 -0700
 ------------------------------------------------------------------------
 ```
 
-## Ticket Tracker (GitHub Issues)
+## <a name="issues"></a>Issue Tracking
 
-The [ticket tracker](https://github.com/opscode-cookbooks/apparmor/issues) is
-the most important documentation for the code base. It provides significant
-historical information, such as:
+Chef Github Issues to track issues with the community cookbooks. Issues should be submitted in the appropriate cookbook's Github repository at: https://github.com/chef-cookbooks/COOKBOOK_NAME/issues/new.
 
-* Which release a bug fix is included in
-* Discussion regarding the design and merits of features
-* Error output to aid in finding similar bugs
+In order to decrease the back and forth an issues and help us get to the bottom of them quickly
+  we use below issue template. You can copy paste this code into the issue you are opening and
+  edit it accordingly.
 
-Each ticket should aim to fix one bug or add one feature.
+<a name="issuetemplate"></a>
+```
+### Environment: [Details about the environment such as the Operating System, cookbook details, etc...]
+
+### Scenario:
+[What you are trying to achieve and you can't?]
+
+
+### Steps to Reproduce:
+[If you are filing an issue what are the things we need to do in order to repro your problem?]
+
+
+### Expected Result:
+[What are you expecting to happen as the consequence of above reproduction steps?]
+
+
+### Actual Result:
+[What actually happens after the reproduction steps?]
+```
 
 ## Using git
 
