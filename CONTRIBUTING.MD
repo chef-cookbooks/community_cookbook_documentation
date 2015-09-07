@@ -47,7 +47,7 @@ Small contributions such as fixing spelling errors, where the content is small e
   without a CLA.
 
 As a rule of thumb, changes are obvious fixes if they do not introduce any new functionality
-  or creative thinking. As long as the change does not affect functionality, some likely
+  or creative thinking. As long as the change does not affect functionality. Some likely
   examples include the following:
 
 * Spelling / grammar fixes
@@ -75,10 +75,10 @@ Date:   Wed Sep 18 11:44:40 2015 -0700
 
 ## <a name="issues"></a>Issue Tracking
 
-Chef Github Issues to track issues with the community cookbooks. Issues should be submitted in the appropriate cookbook's Github repository at: https://github.com/chef-cookbooks/COOKBOOK_NAME/issues/new.
+Chef uses Github Issues to track issues with the community cookbooks. Issues should be submitted in the appropriate cookbook's Github repository at: https://github.com/chef-cookbooks/COOKBOOK_NAME/issues/new.
 
-In order to decrease the back and forth an issues and help us get to the bottom of them quickly
-  we use below issue template. You can copy paste this code into the issue you are opening and
+In order to decrease the back and forth in issues, and to help us get to the bottom of them quickly
+  we use the below issue template. You can copy/paste this template into the issue you are opening and
   edit it accordingly.
 
 <a name="issuetemplate"></a>
