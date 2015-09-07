@@ -23,8 +23,8 @@ Chef uses [the Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0)
 
 The license tells you what rights you have that are provided by the copyright holder.
   It is important that the contributor fully understands what rights they are
-  licensing and agrees to them. Sometimes the copyright holder isn't the contributor,
-  most often when the contributor is doing work for a company.
+  licensing and agrees to them. Sometimes the copyright holder isn't the contributor, 
+  such as when the contributor is doing work for a company.
 
 To make a good faith effort to ensure these criteria are met, Chef requires an Individual CLA
   or a Corporate CLA for contributions. This agreement helps ensure you are aware of the
