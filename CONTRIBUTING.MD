@@ -103,9 +103,8 @@ In order to decrease the back and forth in issues, and to help us get to the bot
 
 ## Using git
 
-You can get a quick copy of the repository for this cookbook by
-running `git clone
-git://github.com/opscode-cookbooks/COOKBOOKNAME.git`.
+You can copy a chef coobook repository to your local workstation by running
+`git clone git://github.com/chef-cookbooks/COOKBOOKNAME.git`.
 
 For collaboration purposes, it is best if you create a GitHub account
 and fork the repository to your own account. Once you do this you will
@@ -117,15 +116,16 @@ as the cookbook, we suggest you suffix the repository with `-cookbook`.
 
 ### Branches and Commits
 
-You should submit your patch as a git branch named after the ticket,
-such as GH-22. This is called a _topic branch_ and allows users to
-associate a branch of code with the ticket.
+You should submit your patch as a git branch named after the Github
+issue, such as GH-22. This is called a _topic branch_ and allows users
+to associate a branch of code with the ticket.
 
 It is a best practice to have your commit message have a _summary
 line_ that includes the ticket number, followed by an empty line and
 then a brief description of the commit. This also helps other
 contributors understand the purpose of changes to the code.
 
+```text
     [GH-22] - platform_family and style
 
     * use platform_family for platform checking
@@ -134,6 +134,7 @@ contributors understand the purpose of changes to the code.
     * GH-692 - delete config files dropped off by packages in conf.d
     * dropped debian 4 support because all other platforms have the same
       values, and it is older than "old stable" debian release
+```
 
 Remember that not all users use Chef in the same way or on the same
 operating systems as you, so it is helpful to be clear about your use
@@ -148,39 +149,10 @@ page on the Chef Docs site.
 
 ## Functional and Unit Tests
 
-This cookbook is set up to run tests under
-[Test Kitchen](https://github.com/test-kitchen). It
-uses minitest-chef to run integration tests after the node has been
-converged to verify that the state of the node.
-
-Test kitchen should run completely without exception using the default
-[baseboxes provided by Chef](https://github.com/chef/bento).
-Because Test Kitchen creates VirtualBox machines and runs through
-every configuration in the `.kitchen.yml` file, it may take some time for
-these tests to complete.
-
-If your changes are only for a specific recipe, run only its
-configuration with Test Kitchen. If you are adding a new recipe, or
-other functionality such as a LWRP or definition, please add
-appropriate tests and ensure they run with Test Kitchen.
-
-If any don't pass, investigate them before submitting your patch.
-
-Any new feature should have unit tests included with the patch with
-good code coverage to help protect it from future changes. Similarly,
-patches that fix a bug or regression should have a _regression test_.
-Simply put, this is a test that would fail without your patch but
-passes with it. The goal is to ensure this bug doesn't regress in the
-future. Consider a regular expression that doesn't match a certain
-pattern that it should, so you provide a patch and a test to ensure
-that the part of the code that uses this regular expression works as
-expected. Later another contributor may modify this regular expression
-in a way that breaks your use cases. The test you wrote will fail,
-signalling to them to research your ticket and use case and accounting
-for it.
-
-If you need help writing tests, please ask on the Chef Developer's
-mailing list, or the #chef-hacking IRC channel.
+Chef cookbooks are tested with functional and unit tests to ensure
+changes don't cause regressions for other use cases.  Ideally all
+changes include either functional or unit tests.  See the TESTING.md
+file for additional information on testing in chef cookbooks.
 
 ## Code Review
 
@@ -203,8 +175,7 @@ number, however the next release of the cookbook may be a major or
 minor incrementing version.
 
 Releases of Chef's cookbooks are usually announced on the Chef user
-mailing list. Releases of several cookbooks may be batched together
-and announced on the [Chef Software Blog](http://www.chef.io/blog).
+mailing list.
 
 ## Working with the community
 
@@ -229,8 +200,7 @@ or the
 [#chef-hacking IRC channel](http://community.chef.io/chat/chef-hacking).
 Not all platforms that a cookbook supports may be supported by Test
 Kitchen. Please provide evidence of testing your contribution if it
-isn't trivial so we don't have to duplicate effort in testing. Chef
-10.14+ "doc" formatted output is sufficient.
+isn't trivial so we don't have to duplicate effort in testing.
 
 Please do indicate new platform (families) or platform versions in the
 commit message, and update the relevant ticket.
@@ -242,12 +212,6 @@ you indicate the issue. For example:
 
     git commit -m '[ISSUE-1041] - Updated pool resource to correctly
     delete.'
-
-Please do use [foodcritic](http://acrmp.github.com/foodcritic) to
-lint-check the cookbook. Except FC007, it should pass all correctness
-rules. FC007 is okay as long as the dependent cookbooks are *required*
-for the default behavior of the cookbook, such as to support an
-uncommon platform, secondary recipe, etc.
 
 Please do ensure that your changes do not break or modify behavior for
 other platforms supported by the cookbook. For example if your changes
