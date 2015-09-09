@@ -10,7 +10,7 @@ step is the desire to improve the project.
 3. [Become a contributor](https://supermarket.chef.io/become-a-contributor) by
 signing our Contributor License Agreement (CLA).
 4. Create a pull request for your change on [GitHub](https://github.com).
-5. The Chef Community team will review your change, and either merge the change or offer suggestions.
+5. The cookbook maintainers will review your change, and either merge the change or offer suggestions.
 
 
 ## The Apache License and the CLA/CCLA
@@ -177,11 +177,14 @@ minor incrementing version.
 Releases of Chef's cookbooks are usually announced on the Chef user
 mailing list.
 
+See the [Cookbook Versioning Policy](http://chef-community.github.io/cvp/) for more guidance on semantic versioning of cookbooks.
+
 ## Working with the community
 
 These resources will help you learn more about Chef and connect to
 other members of the Chef community:
 
+* [Chef Community Guidelines](http://docs.chef.io/community_guidelines.html)
 * [chef](http://lists.chef.io/sympa/info/chef) and
   [chef-dev](http://lists.chef.io/sympa/info/chef-dev) mailing
   lists
