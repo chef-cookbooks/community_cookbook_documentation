@@ -177,6 +177,8 @@ minor incrementing version.
 Releases of Chef's cookbooks are usually announced on the Chef user
 mailing list.
 
+See the [Cookbook Versioning Policy](http://chef-community.github.io/cvp/) for more guidance on semantic versioning of cookbooks.
+
 ## Working with the community
 
 These resources will help you learn more about Chef and connect to
