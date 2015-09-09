@@ -184,6 +184,7 @@ See the [Cookbook Versioning Policy](http://chef-community.github.io/cvp/) for m
 These resources will help you learn more about Chef and connect to
 other members of the Chef community:
 
+* [Chef Community Guidelines](http://docs.chef.io/community_guidelines.html)
 * [chef](http://lists.chef.io/sympa/info/chef) and
   [chef-dev](http://lists.chef.io/sympa/info/chef-dev) mailing
   lists
