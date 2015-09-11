@@ -20,13 +20,15 @@ cloud drivers.
 
 ```
 $ rake -T
-rake integration:cloud    # Run Test Kitchen with cloud plugins
-rake integration:vagrant  # Run Test Kitchen with Vagrant
-rake spec                 # Run ChefSpec examples
-rake style                # Run all style checks
-rake style:chef           # Lint Chef cookbooks
-rake style:ruby           # Run Ruby style checks
-rake travis               # Run all tests on Travis
+rake integration:cloud        # Run Test Kitchen with cloud plugins
+rake integration:vagrant      # Run Test Kitchen with Vagrant
+rake maintainers:generate     # Generate MarkDown version of MAINTAINERS file
+rake spec                     # Run ChefSpec examples
+rake style                    # Run all style checks
+rake style:chef               # Run Chef style checks
+rake style:ruby               # Run Ruby style checks
+rake style:ruby:auto_correct  # Auto-correct RuboCop offenses
+rake travis                   # Run all tests on Travis
 ```
 
 Style Testing
