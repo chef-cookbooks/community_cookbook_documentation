@@ -40,7 +40,7 @@ or
 rake style:ruby
 ```
 
-Chef style tests can be performed with Foodcritic by issuing either
+Chef style/correctness tests can be performed with Foodcritic by issuing either
 ```
 bundle exec foodcritic
 ```
@@ -82,7 +82,7 @@ rake integration:vagrant
 Integration Testing using Cloud providers
 -----------------------------------------
 Integration tests can be performed on cloud providers using
-Test Kitchen plugins. This cookbook ships a ```.kitchen.cloud.yml```
+Test Kitchen plugins. If the cookbook ships with a ```.kitchen.cloud.yml```
 that references environmental variables present in the shell that
 ```kitchen test``` is ran from. These usually contain authentication
 tokens for driving IaaS APIs, as well as the paths to ssh private keys
