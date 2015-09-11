@@ -5,9 +5,9 @@ Cookbook TESTING doc
 
 Testing Prerequisites
 ---------------------
-Chef cookbooks require a working ChefDK installation in order to provide an up-to-date Ruby and various testing tools.
+Chef cookbooks require either a working ChefDK installation set as your system's default ruby or Ruby 2.0+ with bundler installed. Using ChefDK provides a consistent Ruby install, and is the suggested method. ChefDK can be downloaded at https://downloads.chef.io/chef-dk/
 
-ChefDK can be downloaded at https://downloads.chef.io/chef-dk/
+To ensure all gems are updated to their latest releases run `bundle install; bundle update` before running any Rake testing tasks.
 
 Rakefile
 --------
