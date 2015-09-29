@@ -9,6 +9,8 @@ Chef cookbooks require either a working ChefDK installation set as your system's
 
 To ensure all gems are updated to their latest releases run `bundle install; bundle update` before running any Rake testing tasks.
 
+Integration testing relies on both Hashicorp's [Vagrant](https://www.vagrantup.com/downloads.html) and Oracle's [Virtualbox](https://www.virtualbox.org/wiki/Downloads), which must be installed first.
+
 Rakefile
 --------
 The Rakefile ships with a number of tasks, each of which can be ran
