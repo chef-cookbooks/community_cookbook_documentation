@@ -192,7 +192,7 @@ other members of the Chef community:
 
 Please do include tests for your contribution. If you need help, ask
 on the
-[chef-dev mailing list](http://lists.chef.io/sympa/info/chef-dev)
+[chef-dev mailing list](https://discourse.chef.io/c/dev)
 or the
 [#chef-hacking IRC channel](http://community.chef.io/chat/chef-hacking).
 Not all platforms that a cookbook supports may be supported by Test
