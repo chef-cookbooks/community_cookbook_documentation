@@ -35,10 +35,10 @@ To make a good faith effort to ensure these criteria are met, Chef requires an I
 It only takes a few minutes to complete a CLA, and you retain the copyright to your contribution.
 
 You can complete our
-  [Individual CLA](https://supermarket.getchef.com/icla-signatures/new) online.
+  [Individual CLA](https://supermarket.chef.io/icla-signatures/new) online.
   If you're contributing on behalf of your employer and they retain the copyright for your works,
   have your employer fill out our
-  [Corporate CLA](https://supermarket.getchef.com/ccla-signatures/new) instead.
+  [Corporate CLA](https://supermarket.chef.io/ccla-signatures/new) instead.
 
 ### Chef Obvious Fix Policy
 
