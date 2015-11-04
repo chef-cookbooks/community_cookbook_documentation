@@ -10,7 +10,7 @@ step is the desire to improve the project.
 3. [Become a contributor](https://supermarket.chef.io/become-a-contributor) by
 signing our Contributor License Agreement (CLA).
 4. Create a pull request for your change on [GitHub](https://github.com).
-5. The cookbook maintainers will review your change, and either merge the change or offer suggestions.
+5. The community cookbook maintainers will review your change, and either merge the change or offer suggestions.
 
 
 ## The Apache License and the CLA/CCLA
@@ -168,12 +168,6 @@ The versioning for Chef Software Cookbook projects is X.Y.Z.
 * Y is a minor release, which adds both new features and bug fixes
 * Z is a patch release, which adds just bug fixes
 
-A released version of a cookbook will end in an even number, e.g.
-"1.2.4" or "0.8.0". When development for the next version of the
-cookbook begins, the "Z" patch number is incremented to the next odd
-number, however the next release of the cookbook may be a major or
-minor incrementing version.
-
 Releases of Chef's cookbooks are usually announced on the Chef user
 mailing list.
 
@@ -194,7 +188,7 @@ other members of the Chef community:
 * Chef Software Chef [product page](http://www.chef.io/chef)
 
 
-## Cookbook Contribution Do's and Don't's
+## Contribution Do's and Don't's
 
 Please do include tests for your contribution. If you need help, ask
 on the
