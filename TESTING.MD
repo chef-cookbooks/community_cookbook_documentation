@@ -82,3 +82,24 @@ or
 rake integration:vagrant
 ```
 
+Private Images
+------------------
+
+Some operating systems have specific licenses that prevent us from making those images available freely. We either comment these out in the .kitchen.yml or create a separate .kitchen.vmware.yml file for Chef internal use. 
+
+Images include:
+
+* Windows Server 2008
+* Windows Server 2012
+* Windows 7 Professional
+* Windows 8.1 Professional
+* Mac OS X 10.7-10.11
+* Solaris 10.11
+
+If you are a Chef employee, you will need to get VMWare Fusion, [Vagrant plugin for VMWare](https://www.vagrantup.com/vmware/), and set up a [Hashicorp Atlas](https://www.hashicorp.com/atlas.html) account that has access to the Chef images.
+
+Once you have the required software, login to Atlas from the command line. Uncomment the suites in .kitchen.yml file, or set the environment variable KITCHEN_LOCAL_YAML to kitchen.vmware.yml.
+
+Otherwise if you are not a Chef employee, in order to test these operating systems you will need to obtain the appropriate licenses and images as needed.
+
+
