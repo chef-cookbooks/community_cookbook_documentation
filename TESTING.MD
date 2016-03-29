@@ -1,8 +1,6 @@
 Cookbook TESTING doc
 ====================
 
-**Note**: This document outlines the process for testing that we are working towards for all chef-cookbooks repos.  Not all cookbooks currently ship with the necessary testing framework. This document does not apply to any repository that is missing the Rakefile. We appreciate the patience as we roll out first class testing to all our repositories.
-
 Testing Prerequisites
 ---------------------
 Chef cookbooks require either a working ChefDK installation set as your system's default ruby or Ruby 2.0+ with bundler installed. Using ChefDK provides a consistent Ruby install, and is the suggested method. ChefDK can be downloaded at https://downloads.chef.io/chef-dk/
