@@ -1,10 +1,12 @@
 # Community Cookbook Team
 
-The Community Cookbook Team is responsible for improving the Chef owned community cookbooks and for working with the community to resolve issues and review / merge pull requests.  
+The Community Cookbook Team is responsible for improving the Chef owned community cookbooks, and for working with the community to resolve issues and review / merge pull requests.  
 
 ## Our Goals
+- Increased velocity of releases for CHEF-managed cookbooks on the Supermarket
+- Improved ability for community members to find and write awesome cookbooks
+- Decreased time required for customers to automate key production system
 
-TODO: Add goals from the original team proposal doc
 
 ## Design Principals
 
