@@ -1,6 +1,6 @@
 # Contributing to Chef Software Cookbooks
 
-We're glad you want to contribute to Chef Software Cookbooks! The first
+We're glad you want to contribute to Chef-managed community cookbooks! The first
 step is the desire to improve the project.
 
 ## Quick Contributing Steps
