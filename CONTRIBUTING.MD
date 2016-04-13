@@ -90,7 +90,7 @@ Additional help with git is available on the [Community Contributions](https://d
 
 ## Functional and Unit Tests
 
-Chef cookbooks are tested with functional and unit tests to ensure changes don't cause regressions for other use cases.  Ideally all changes include either functional or unit tests.  See the TESTING.md file for additional information on testing in chef cookbooks.
+Chef cookbooks are tested with functional and unit tests to ensure changes don't cause regressions for other use cases. Ideally all changes include either functional or unit tests. See the TESTING.md file for additional information on testing in chef cookbooks.
 
 ## Code Review
 
