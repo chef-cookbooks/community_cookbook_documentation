@@ -3,9 +3,10 @@
 The Community Cookbook Team is responsible for improving the [Chef-managed community cookbooks](https://github.com/chef-cookbooks) and for working with the community to resolve issues and review / merge pull requests.  
 
 ## Our Goals
+
 - Increased velocity of releases for Chef-managed community cookbooks on the Supermarket
 - Improved ability for community members to find and write awesome cookbooks
-- Decreased time required for customers to automate key production system
+- Decreased the time required for customers to automate key production system
 
 ## Design Principals
 
@@ -15,7 +16,7 @@ When possible we believe in shipping cookbooks as a collection of resources that
 
 ### Build for wrapping
 
-Sometimes applications don't lend themselves to a pure resource model.  When that's the case cookbooks should be designed with the expectation that users will wrap them in their own wrapper cookbook.  Each cookbook meant for wrapping should have an example wrapper cookbook published to the Supermarket.
+Sometimes applications don't lend themselves to a pure resource model.  When that's the case cookbooks should be designed with the expectation that users will wrap them in their own wrapper cookbook.  Each cookbook meant for wrapping should have an example wrapper cookbook included in the form of a test cookbook for integration testing.
 
 ### Test Everything
 
@@ -23,16 +24,16 @@ Cookbooks need to be high-quality and often contributions come in from users dev
 
 ### Wide platform support
 
-Not everyone runs RHEL and not everyone runs Ubuntu. We aim to provide support for as many platforms as possible.  Priority is given to [Tier 1 supported platforms](https://github.com/chef/chef-rfc/blob/master/rfc021-platform-support-policy.md#tier-1-support) supported by Chef itself.
+Not everyone runs RHEL and not everyone runs Ubuntu. We aim to provide support for as many platforms as possible. Priority is given to [Tier 1 supported platforms](https://github.com/chef/chef-rfc/blob/master/rfc021-platform-support-policy.md#tier-1-support) supported by Chef itself.
 
 ### Support the 95% use case
 
-Unfortunately new functionality comes with a maintenance cost and because of this we must be mindful of all new functionality we introduce. Chef-managed community cookbooks aim to support the use cases of 95% of users. Sometimes edge cases introduce extreme code complexity and maintenance work. In this case we'll defer the change to a wrapper cookbook or purpose-built fork.
+Unfortunately new functionality comes with a maintenance cost and because of this we must be mindful of all new functionality we introduce. Chef-managed community cookbooks aim to support the use cases of 95% of users. Sometimes edge cases introduce extreme code complexity and maintenance burden. In this case we'll defer the change to a wrapper cookbook or purpose-built fork.
 
 ## Contacting Us
 
-The community cookbook team can be e-mailed directly at [cookbooks@chef.io](mailto:cookbooks@chef.io).  You can also find a list of maintainers, some of whom are Chef employees, in each cookbook repository at /MAINTAINERS.md
+The community cookbook team can be e-mailed directly at [cookbooks@chef.io](mailto:cookbooks@chef.io). You can also find a list of maintainers, some of whom are Chef employees, in each cookbook repository at /MAINTAINERS.md
 
 ## Getting Involved
 
-If you want to get involved, we want to make it as easy as possible.  Our contribution process is documented in [CONTRIBUTING.MD in the Community Cookbook Documentation repository on GitHub](https://github.com/chef-cookbooks/community_cookbook_documentation/blob/master/CONTRIBUTING.MD).  Feel free to contact us if you need help or additional details.
+If you want to get involved, we want to make it as easy as possible. Our contribution process is documented in [CONTRIBUTING.MD in the Community Cookbook Documentation repository on GitHub](https://github.com/chef-cookbooks/community_cookbook_documentation/blob/master/CONTRIBUTING.MD). Feel free to contact us if you need help or additional details.
