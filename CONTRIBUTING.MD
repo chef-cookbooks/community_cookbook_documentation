@@ -82,31 +82,6 @@ Chef uses Github Issues to track issues with the community cookbooks. Issues
 should be submitted in the appropriate cookbook's Github repository at:
 https://github.com/chef-cookbooks/COOKBOOK_NAME/issues/new.
 
-In order to decrease the back and forth in issues, and to help us get to the
-bottom of them quickly we use the below issue template. You can copy/paste this
-template into the issue you are opening and edit it accordingly.
-
-<a name="issuetemplate"></a>
-```
-### Environment: [Details about the environment such as the Operating System,
-cookbook details, etc...]
-
-### Scenario:
-[What you are trying to achieve and you can't?]
-
-
-### Steps to Reproduce:
-[If you are filing an issue what are the things we need to do in order to repro your problem?]
-
-
-### Expected Result:
-[What are you expecting to happen as the consequence of above reproduction steps?]
-
-
-### Actual Result:
-[What actually happens after the reproduction steps?]
-```
-
 ## Using git
 
 You can copy a chef cookbook repository to your local workstation by running
