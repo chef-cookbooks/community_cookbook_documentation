@@ -1,4 +1,4 @@
-# community_cookbook_documentation
+# Chef Community Cookbook Documentation
 
 Pertinent documentation for all [cookbooks managed by Chef Software, Inc](https://github.com/chef-cookbooks). Cookbooks in [this GitHub organization](https://github.com/chef-cookbooks) are generally referred to as "Chef-managed community cookbooks".
 
