@@ -74,11 +74,9 @@ or
 rake integration:vagrant
 ```
 
-<<<<<<< a2522b87718a266938e656c7597c34e6fa1571f3
-
 ## Private Images
 
-Some operating systems have specific licenses that prevent us from making those images available freely. We either comment these out in the .kitchen.yml or create a separate .kitchen.vmware.yml file for Chef internal use.
+Some operating systems have specific licenses that prevent us from making those images available freely. We either comment these the .kitchen.yml or create a separate .kitchen.vmware.yml file for Chef internal use.
 
 Images include:
 
@@ -88,95 +86,9 @@ Images include:
 - Windows 8.1 Professional
 - Mac OS X 10.7-10.11
 - Solaris 10.11
-- Integration Testing using Cloud providers
-
-Integration tests can be performed on cloud providers using Test Kitchen plugins. If the cookbook ships with a `.kitchen.cloud.yml` that references environmental variables present in the shell that `kitchen test` is ran from. These usually contain authentication tokens for driving IaaS APIs, as well as the paths to ssh private keys needed for Test Kitchen log into them after they've been created.
-
-Examples of environment variables being set in `~/.bash_profile`:
-
-```shell
-# digital_ocean
-export DIGITAL_OCEAN_CLIENT_ID='your_bits_here'
-export DIGITAL_OCEAN_API_KEY='your_bits_here'
-export DIGITAL_OCEAN_SSH_KEY_IDS='your_bits_here'
-
-# aws
-export AWS_ACCESS_KEY_ID='your_bits_here'
-export AWS_SECRET_ACCESS_KEY='your_bits_here'
-export AWS_KEYPAIR_NAME='your_bits_here'
-```
-
-Integration tests using cloud drivers can be performed with either
-
-```shell
-export KITCHEN_YAML=.kitchen.cloud.yml
-bundle exec kitchen test
-```
-
-or
-
-```shell
-rake integration:cloud
-```
-
-## Digital Ocean Hint
-
-At the time of this writing, you cannot find the numerical values needed for your SSH_KEY_IDS from the GUI. Instead, you will need to access the API from the command line.
-
-```shell
-curl -L 'https://api.digitalocean.com/ssh_keys/?client_id=your_bits_here&api_key=your_bits_here'
-```
-
-## Words about .travis.yml
-
-In order for Travis to perform integration tests on public cloud providers, two major things need to happen. First, the environment variables referenced by `.kitchen.cloud.yml` need to be made available. Second, the private half of the ssh keys needed to log into machines need to be dropped off on the machine.
-
-The first part is straight forward. The travis gem can encrypt environment variables against the public key on the Travis repository and add them to the .travis.yml.
-
-```
-        > Format markdown
-```
 
 If you are a Chef employee, you will need to get VMWare Fusion, [Vagrant plugin for VMWare](https://www.vagrantup.com/vmware/), and set up a [Hashicorp Atlas](https://www.hashicorp.com/atlas.html) account that has access to the Chef images.
 
-<<<<<<< a2522b87718a266938e656c7597c34e6fa1571f3 Once you have the required software, login to Atlas from the command line. Uncomment the suites in .kitchen.yml file, or set the environment variable KITCHEN_LOCAL_YAML to kitchen.vmware.yml.
+Once you have the required software, login to Atlas from the command line. Use the private instances from the .kitchen.yml file, or set the environment variable KITCHEN_LOCAL_YAML to kitchen.vmware.yml.
 
 Otherwise if you are not a Chef employee, in order to test these operating systems you will need to obtain the appropriate licenses and images as needed.
-
-======= The second part is a little more complicated. Travis ENV variables are restricted to 90 bytes, and will not fit an entire SSH key. This can be worked around by breaking them up into 90 byte chunks, stashing them into ENV variables, then digging them out in the `before_install` section of .travis.yml
-
-Here is an AWK script to do the encoding.
-
-```
-base64 ~/.ssh/travisci_cook_digitalocean.pem | \
-awk '{
-  j=0;
-  for( i=1; i<length; i=i+90 ) {
-    system("travis encrypt DO_KEY_CHUNK_" j "=" substr($0, i, 90) " --add");
-    j++;
-  }
-}'
-
-base64 ~/.ssh/travisci_cook_ec2.pem | \
-awk '{
-  j=0;
-  for( i=1; i<length; i=i+90 ) {
-    system("travis encrypt EC2_KEY_CHUNK_" j "=" substr($0, i, 90)" --add");
-    j++;
-  }
-}'
-```
-
-Then in .travis.yml:
-
-```yaml
-before_install:
-- echo -n $DO_KEY_CHUNK_{0..30} >> ~/.ssh/id_do.base64
-- cat ~/.ssh/id_do.base64 | tr -d ' ' | base64 --decode >  ~/.ssh/id_do.pem
-  - echo -n $EC2_KEY_CHUNK_{0..30} >> ~/.ssh/id_ec2.base64
-  - cat ~/.ssh/id_ec2.base64 | tr -d ' ' | base64 --decode > ~/.ssh/id_ec2.pem
-```
-
-```
-        > Format markdown
-```

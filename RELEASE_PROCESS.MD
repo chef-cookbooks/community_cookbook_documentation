@@ -1,5 +1,7 @@
 # How We Release Software
 
+This guide for our maintainers lists the process for taking community contributions and releasing cookbook artifacts for consumption by the community.
+
 ## Release on every contribution
 
 Smaller changes incur less risk, and releasing after each contribution ensures we get the changes to users and contributors as quickly as possible. We aim to ship new cookbook releases after any bugfix or feature enhancements are merged. For cookbooks where automated testing has not been implemented there be some delay, as manual testing is necessary.

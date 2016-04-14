@@ -1,6 +1,6 @@
-# Contributing to Chef Software Cookbooks
+# Contributing to Chef Managed Community Cookbooks
 
-We're glad you want to contribute to Chef-managed community cookbooks! The first step is the desire to improve the project.
+We're glad you want to contribute to Chef managed community cookbooks! The first step is the desire to improve the project.
 
 ## Quick Contributing Steps
 
@@ -55,7 +55,7 @@ Date:   Wed Sep 18 11:44:40 2015 -0700
 
 ## <a name="issues"></a>Issue Tracking
 
-Chef uses Github Issues to track issues with the community cookbooks. Issues should be submitted in the appropriate cookbook's Github repository at: <https://github.com/chef-cookbooks/COOKBOOK_NAME/issues/new>.
+We use Github Issues to track issues with the community cookbooks. Issues should be submitted in the appropriate cookbook's Github repository at: <https://github.com/chef-cookbooks/COOKBOOK_NAME/issues/new>.
 
 ## Using git
 
@@ -90,11 +90,11 @@ Additional help with git is available on the [Community Contributions](https://d
 
 ## Functional and Unit Tests
 
-Chef cookbooks are tested with functional and unit tests to ensure changes don't cause regressions for other use cases. Ideally all changes include either functional or unit tests. See the TESTING.md file for additional information on testing in chef cookbooks.
+Cookbooks are tested with functional and unit tests to ensure changes don't cause regressions for other use cases. Ideally all changes include either functional or unit tests. See the TESTING.md file for additional information on testing in Chef cookbooks.
 
 ## Code Review
 
-Chef Software regularly reviews code contributions and provides suggestions for improvement in the code itself or the implementation.
+Cookbook maintainers regularly review code contributions and provides suggestions for improvement in the code itself or the implementation.
 
 ## Release Cycle
 
@@ -129,6 +129,6 @@ If a contribution adds new platforms or platform versions, indicate such in the 
 
 Please do ensure that your changes do not break or modify behavior for other platforms supported by the cookbook. For example if your changes are for Debian, make sure that they do not break on CentOS.
 
-Please do **not** modify the version number in the `metadata.rb`, Chef will select the appropriate version based on the release cycle information above.
+Please do **not** modify the version number in the `metadata.rb`, a maintainer will select the appropriate version based on the release cycle information above.
 
-Please do **not** update the `CHANGELOG.md` for a new version. Not all changes to a cookbook may be merged and released in the same versions. Chef Software will update the `CHANGELOG.md` when releasing a new version of the cookbook.
+Please do **not** update the `CHANGELOG.md` for a new version. Not all changes to a cookbook may be merged and released in the same versions. A maintainer will update the `CHANGELOG.md` when releasing a new version of the cookbook.
