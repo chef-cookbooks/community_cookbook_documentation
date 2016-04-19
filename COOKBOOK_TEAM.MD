@@ -8,7 +8,7 @@ The Community Cookbook Team is responsible for improving the [Chef-managed commu
 - Improved ability for community members to find and write awesome cookbooks
 - Decreased the time required for customers to automate key production system
 
-## Design Principals
+## Design Principles
 
 ### Resources come first
 
