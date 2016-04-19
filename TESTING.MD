@@ -1,16 +1,32 @@
 # Cookbook TESTING doc
 
+This document describes the process for testing Chef community cookbooks using ChefDK. Cookbooks can be tested using the test dependencies defined in cookbook Gemfiles alone, but that process will not be covered in this document in order to maintain simplicity.
+
 ## Testing Prerequisites
 
-Chef cookbooks require either a working ChefDK installation set as your system's default ruby or Ruby 2.0+ with bundler installed. Using ChefDK provides a consistent Ruby install, and is the suggested method. ChefDK can be downloaded at <<https://downloads.chef.io/chef-dk/>
+A working ChefDK installation set as your system's default ruby. ChefDK can be downloaded at <<https://downloads.chef.io/chef-dk/>
 
-To ensure all gems are updated to their latest releases run `bundle install; bundle update` before running any Rake testing tasks.
+Hashicorp's [Vagrant](https://www.vagrantup.com/downloads.html) and Oracle's [Virtualbox](https://www.virtualbox.org/wiki/Downloads) for integration testing.
 
-Integration testing relies on both Hashicorp's [Vagrant](https://www.vagrantup.com/downloads.html) and Oracle's [Virtualbox](https://www.virtualbox.org/wiki/Downloads), which must be installed first.
+## Installing dependencies
+
+Cookbooks may require additional testing dependencies that do not ship with ChefDK directly. These can be installed into the ChefDK ruby environment with the following commands
+
+Install dependencies:
+
+```shell
+chef exec bundle install
+```
+
+Update any installed dependencies to the latest versions:
+
+```shell
+chef exec bundle update
+```
 
 ## Rakefile
 
-The Rakefile ships with a number of tasks, each of which can be ran individually, or in groups. Typing "rake" by itself will perform style checks with Rubocop and Foodcritic, ChefSpec with rspec, and integration with Test Kitchen using the Vagrant driver by default.Alternatively, integration tests can be ran with Test Kitchen cloud drivers.
+Each cookbook contains a Rakefile which includes a number of tasks, each of which can be ran individually, or in groups. Typing "rake" by itself will perform the default checks: style checks (Rubocop and Foodcritic), and unit tests (Chefspec). To see a complete list of available tasks run `Rake -T`
 
 ```
 $ rake -T
@@ -29,22 +45,10 @@ rake travis                   # Run all tests on Travis
 Ruby style tests can be performed by Rubocop by issuing either
 
 ```shell
-bundle exec rubocop
-```
-
-or
-
-```shell
 rake style:ruby
 ```
 
 Chef style/correctness tests can be performed with Foodcritic by issuing either
-
-```shell
-bundle exec foodcritic
-```
-
-or
 
 ```shell
 rake style:chef
@@ -56,22 +60,26 @@ Unit testing is done by running Rspec examples. Rspec will test any libraries, t
 
 ## Integration Testing
 
-Integration testing is performed by Test Kitchen. Test Kitchen will use either the Vagrant driver or various cloud drivers to instantiate machines and apply cookbooks. After a successful converge, tests are uploaded and ran out of band of Chef. Tests should be designed to ensure that a recipe has accomplished its goal.
+Integration testing is performed by Test Kitchen. After a successful converge, tests are uploaded and ran out of band of Chef. Tests should be designed to ensure that a recipe has accomplished its goal.
 
 ## Integration Testing using Vagrant
 
-Integration tests can be performed on a local workstation using Virtualbox or VMWare. Detailed instructions for setting this up can be found at the [Bento](https://github.com/chef/bento) project web site.
-
-Integration tests using Vagrant can be performed with either
-
-```shell
-bundle exec kitchen test
-```
-
-or
+Integration tests can be performed on a local workstation using either Virtualbox or VMWare as the virtualization hypervisor. To run tests against all available instances run:
 
 ```shell
 rake integration:vagrant
+```
+
+To see a list of available test instances run:
+
+```shell
+chef exec kitchen list
+```
+
+To test specific instance run:
+
+```shell
+chef exec kitchen test INSTANCE_NAME
 ```
 
 ## Private Images
