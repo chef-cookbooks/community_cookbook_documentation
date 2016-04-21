@@ -4,7 +4,7 @@ This document describes the process for testing Chef community cookbooks using C
 
 ## Testing Prerequisites
 
-A working ChefDK installation set as your system's default ruby. ChefDK can be downloaded at <<https://downloads.chef.io/chef-dk/>
+A working ChefDK installation set as your system's default ruby. ChefDK can be downloaded at <https://downloads.chef.io/chef-dk/>
 
 Hashicorp's [Vagrant](https://www.vagrantup.com/downloads.html) and Oracle's [Virtualbox](https://www.virtualbox.org/wiki/Downloads) for integration testing.
 
