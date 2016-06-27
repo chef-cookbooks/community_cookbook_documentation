@@ -12,7 +12,7 @@ Infrastructure stability for our users is critical so we aim to release predicta
 
 ## Test Before Releasing
 
-Many cookbooks have integration tests that run using kitchen-docker/kitchen-dokken in Travis CI.  For these cookbooks we're preforming integration testing on every commit. For others integration tests must be run locally and this should be done before any release to ensure high quality releases.
+Many cookbooks have integration tests that run using kitchen-dokken in Travis CI.  For these cookbooks we're preforming integration testing on every commit. For others integration tests must be run locally and this should be done before any release to ensure high quality releases.
 
 ## Always update the changelog
 
@@ -20,4 +20,4 @@ Understanding changes between releases is important for users consuming our cook
 
 ## Use Stove for tag management / file pruning
 
-Cookbook artifacts on Github are rather large and include files such as Gemfiles, test cookbooks, and large numbers of other development files. These files are not necessary for the cookbook to function in an end user environment, and we've chosen to use Stove to package a minimal cookbook artifact for upload to the Supermarket. Stove includes a whitelist of files to ship, and also handles tagging the git repo on release.
+Cookbook artifacts on Github are rather large and include files such as Gemfiles, test cookbooks, and large numbers of other development files. These files are not necessary for the cookbook to function in an end user environment, and we've chosen to use Stove to package a minimal cookbook artifact for upload to the Supermarket. Stove includes an internal whitelist of files, which will be included in the Supermarket artifact, and also handles tagging the git repo on release.
