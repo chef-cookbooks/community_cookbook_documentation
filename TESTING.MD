@@ -30,14 +30,14 @@ Each cookbook contains a Rakefile which includes a number of tasks, each of whic
 
 ```
 $ rake -T
-rake integration:vagrant      # Run Test Kitchen with Vagrant
+rake integration:             # Run kitchen integration tests
 rake maintainers:generate     # Generate MarkDown version of MAINTAINERS file
 rake spec                     # Run ChefSpec examples
 rake style                    # Run all style checks
 rake style:chef               # Run Chef style checks
 rake style:ruby               # Run Ruby style checks
 rake style:ruby:auto_correct  # Auto-correct RuboCop offenses
-rake travis                   # Run all tests on Travis
+rake supermarket:publish      # Publish cookbook to Supermarket with Stove
 ```
 
 ## Style Testing
