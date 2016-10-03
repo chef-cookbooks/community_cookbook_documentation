@@ -1,6 +1,6 @@
 # Community Cookbook Team
 
-The Community Cookbook Team is responsible for improving the [Chef-managed community cookbooks](https://github.com/chef-cookbooks) and for working with the community to resolve issues and review / merge pull requests.  
+The Community Cookbook Team is responsible for improving the [Chef-managed community cookbooks](https://github.com/chef-cookbooks) and for working with the community to resolve issues and review / merge pull requests.
 
 ## Our Goals
 
@@ -12,15 +12,15 @@ The Community Cookbook Team is responsible for improving the [Chef-managed commu
 
 ### Resources come first
 
-When possible we believe in shipping cookbooks as a collection of resources that cookbook consumers can use to compose their own cookbooks.  The resources do the heavy lifting and allow consumers the ability to customize the installation and configuration of the application for their particular environment.
+When possible we believe in shipping cookbooks as a collection of resources that cookbook consumers can use to compose their own cookbooks. The resources do the heavy lifting and allow consumers the ability to customize the installation and configuration of the application for their particular environment.
 
 ### Build for wrapping
 
-Sometimes applications don't lend themselves to a pure resource model.  When that's the case cookbooks should be designed with the expectation that users will wrap them in their own wrapper cookbook.  Each cookbook meant for wrapping should have an example wrapper cookbook included in the form of a test cookbook for integration testing.
+Sometimes applications don't lend themselves to a pure resource model. When that's the case cookbooks should be designed with the expectation that users will wrap them in their own wrapper cookbook. Each cookbook meant for wrapping should have an example wrapper cookbook included in the form of a test cookbook for integration testing.
 
 ### Test Everything
 
-Cookbooks need to be high-quality and often contributions come in from users developing for a single platform.  In order to ensure we don't regress functionality or platform support we must test all the things.  This includes linting with rubocop, unit testing with ChefSpec, and integration testing with Test Kitchen. These tests should run on every pull request (PR) and commit in order to ensure the master stays in a shippable state. For Linux platforms Test Kitchen should be run using Docker within Travis CI for integration testing of every PR.
+Cookbooks need to be high-quality and often contributions come in from users developing for a single platform. In order to ensure we don't regress functionality or platform support we must test all the things. This includes linting with Cookstyle, unit testing with ChefSpec, and integration testing with Test Kitchen. These tests should run on every pull request (PR) and commit in order to ensure the master stays in a shippable state. For Linux platforms Test Kitchen should be run using kitchen-dokken within Travis CI for integration testing of every PR.
 
 ### Wide platform support
 
