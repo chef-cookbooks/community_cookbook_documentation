@@ -26,9 +26,9 @@ You can complete our [Individual CLA](https://supermarket.chef.io/icla-signature
 
 ### Chef Obvious Fix Policy
 
-Small contributions such as fixing spelling errors, where the content is small enough to not be considered intellectual property, can be submitted by a contributor as a patch, without a CLA.
+Small contributions, such as fixing spelling errors, where the content is small enough to not be considered intellectual property, can be submitted without a CLA.
 
-As a rule of thumb, changes are obvious fixes if they do not introduce any new functionality or creative thinking. As long as the change does not affect functionality. Some likely examples include the following:
+As a rule of thumb, changes are obvious fixes if they do not introduce any new functionality or creative thinking. Assuming the change does not affect functionality, some common obvious fix examples include the following:
 
 - Spelling / grammar fixes
 - Typo correction, white space and formatting changes
@@ -108,17 +108,6 @@ See the [Cookbook Versioning Policy](https://chef-community.github.io/cvp/) for 
 
 Releases of Chef's cookbooks are generally performed after any bugfix / feature enhancement pull request merge. You can watch the Github repository for updates or watch the cookbook on the Supermarket to receive release notification e-mails.
 
-## Working with the community
-
-These resources will help you learn more about Chef and connect to other members of the Chef community:
-
-- [Chef Community Guidelines](https://docs.chef.io/community_guidelines.html)
-- [Chef Mailing List](https://discourse.chef.io/c/dev)
-- chef and #chef-hacking IRC channels on irc.freenode.net
-- [Supermarket site](https://supermarket.chef.io)
-- [Chef Docs](https://docs.chef.io)
-- Chef Software Chef [product page](https://www.chef.io/chef)
-
 ## Contribution Do's and Don't's
 
 Please do include tests for your contribution. If you need help, ask on the [chef-dev mailing list](https://discourse.chef.io/c/dev) or the [#chef-hacking IRC channel](https://community.chef.io/chat/chef-hacking). Not all platforms that a cookbook supports may be supported by Test Kitchen. Please provide evidence of testing your contribution if it isn't trivial so we don't have to duplicate effort in testing.
@@ -132,3 +121,16 @@ Please do ensure that your changes do not break or modify behavior for other pla
 Please do **not** modify the version number in the `metadata.rb`, a maintainer will select the appropriate version based on the release cycle information above.
 
 Please do **not** update the `CHANGELOG.md` for a new version. Not all changes to a cookbook may be merged and released in the same versions. A maintainer will update the `CHANGELOG.md` when releasing a new version of the cookbook.
+
+## Chef Community
+
+Chef is made possible by a strong community of developers and system administrators. If you have any questions or if you would like to get involved in the Chef community you can check out:
+
+- [Chef Mailing List](https://discourse.chef.io/)
+- [Chef Community Slack](https://community-slack.chef.io/)
+
+Also here are some additional pointers to some awesome Chef content:
+
+- [Chef Docs](https://docs.chef.io/)
+- [Learn Chef](https://learn.chef.io/)
+- [Chef Website](https://www.chef.io/)
