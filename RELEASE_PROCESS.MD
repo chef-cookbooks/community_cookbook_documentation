@@ -12,7 +12,7 @@ Infrastructure stability for our users is critical so we aim to release predicta
 
 ## Test Before Releasing
 
-Many cookbooks have integration tests that run using kitchen-dokken in Travis CI.  For these cookbooks we're preforming integration testing on every commit. For others integration tests must be run locally and this should be done before any release to ensure high quality releases.
+Many cookbooks have integration tests that run using kitchen-dokken in Travis CI. For these cookbooks we're preforming integration testing on every commit. For others integration tests must be run locally and this should be done before any release to ensure high quality releases.
 
 ## Always update the changelog
 

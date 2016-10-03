@@ -125,7 +125,7 @@ Please do include tests for your contribution. If you need help, ask on the [che
 
 Please do indicate new platform (families) or platform versions in the commit message, and update the relevant ticket.
 
-If a contribution adds new platforms or platform versions, indicate such in the body of the commit message(s), and update the relevant issues. When writing commit messages, it is helpful for others if you indicate the issue. For example:    git commit -m '[ISSUE-1041] - Updated pool resource to correctly delete.'
+If a contribution adds new platforms or platform versions, indicate such in the body of the commit message(s), and update the relevant issues. When writing commit messages, it is helpful for others if you indicate the issue. For example: git commit -m '[ISSUE-1041] - Updated pool resource to correctly delete.'
 
 Please do ensure that your changes do not break or modify behavior for other platforms supported by the cookbook. For example if your changes are for Debian, make sure that they do not break on CentOS.
 
