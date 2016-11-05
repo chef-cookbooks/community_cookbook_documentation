@@ -24,7 +24,7 @@ Cookbooks need to be high-quality and often contributions come in from users dev
 
 ### Wide platform support
 
-Not everyone runs RHEL and not everyone runs Ubuntu. We aim to provide support for as many platforms as possible. Priority is given to [Tier 1 supported platforms](https://github.com/chef/chef-rfc/blob/master/rfc021-platform-support-policy.md#tier-1-support) supported by Chef itself.
+Not everyone runs RHEL and not everyone runs Ubuntu. We aim to provide support for as many platforms as possible. Priority is given to [Foundation Platforms](https://docs.chef.io/platforms.html#chef-client-foundational-platforms) supported by Chef itself.
 
 ### Support the 95% use case
 

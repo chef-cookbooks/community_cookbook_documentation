@@ -93,6 +93,7 @@ Images include:
 - Windows 7 Professional
 - Windows 8.1 Professional
 - Mac OS X 10.7-10.12
+- SLES 12 / 12SP1
 - Solaris 10.11
 
 If you are a Chef employee, you will need to get VMWare Fusion, [Vagrant plugin for VMWare](https://www.vagrantup.com/vmware/), and set up a [Hashicorp Atlas](https://www.hashicorp.com/atlas.html) account that has access to the Chef images.
