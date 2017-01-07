@@ -29,10 +29,10 @@ Chef cookbooks are built to last. We strive to ensure high quality throughout th
 
 Code review takes place in GitHub pull requests. See [this article](https://help.github.com/articles/about-pull-requests/) if you're not familiar with GitHub Pull Requests.
 
-Once you open a pull request, cookbook maintainers will review your code and respond to your pull request with any feedback they might have. The process at this point is as follows:
+Once you open a pull request, cookbook maintainers will review your code using the built-in code review process in Github PRs. The process at this point is as follows:
 
-1. Thumbs-up (:+1:) are required from one or more cookbook maintainers. Each cookbook has a Maintainers.md file listing maintainers.
-2. Your change will be merged into the cookbooks's `master` branch and will be noted in the cookbook's `CHANGELOG.md` at the time of release.
+1. A cookbook maintainer will review your code and merge it if no changes are necessary. Your change will be merged into the cookbooks's `master` branch and will be noted in the cookbook's `CHANGELOG.md` at the time of release.
+2. If a maintainer has feedback or questions on your changes they they will set `request changes` in the review and provide an explaination.
 
 ### Developer Certification of Origin (DCO)
 
