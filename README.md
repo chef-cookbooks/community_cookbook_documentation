@@ -9,3 +9,7 @@ Any documentation in this repository applies to all Chef-managed community cookb
 ## Why not stick the documentation on the docs site?
 
 Our goal is for these documents to become living documents. Github allows for easy browsing as well as simple edits from the community with the fork / pull request model.
+
+## Tools Repo
+
+We also maintain a repo that documents the tooling we use as a team at <https://github.com/chef-cookbooks/community_cookbook_tools>
