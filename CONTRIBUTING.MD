@@ -147,10 +147,6 @@ Remember that not all users use Chef in the same way or on the same operating sy
 
 Additional help with git is available on the [Community Contributions](https://docs.chef.io/community_contributions.html#use-git) page on the Chef Docs site.
 
-## Code Review
-
-Cookbook maintainers regularly review code contributions and provides suggestions for improvement in the code itself or the implementation.
-
 ## Release Cycle
 
 The versioning for Chef Software Cookbook projects is X.Y.Z.
