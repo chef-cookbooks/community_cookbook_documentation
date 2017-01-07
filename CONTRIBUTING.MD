@@ -161,7 +161,7 @@ Releases of Chef's cookbooks are generally performed after any bugfix / feature 
 
 ## Contribution Do's and Don't's
 
-Please do include tests for your contribution. If you need help, ask on the [chef-dev mailing list](https://discourse.chef.io/c/dev) or the [#chef-hacking IRC channel](https://community.chef.io/chat/chef-hacking). Not all platforms that a cookbook supports may be supported by Test Kitchen. Please provide evidence of testing your contribution if it isn't trivial so we don't have to duplicate effort in testing.
+Please do include tests for your contribution. If you need help, ask on the [chef-dev mailing list](https://discourse.chef.io/c/dev) or the [Chef Community Slack](https://community-slack.chef.io/). Not all platforms that a cookbook supports may be supported by Test Kitchen. Please provide evidence of testing your contribution if it isn't trivial so we don't have to duplicate effort in testing.
 
 Please do indicate new platform (families) or platform versions in the commit message, and update the relevant ticket.
 
