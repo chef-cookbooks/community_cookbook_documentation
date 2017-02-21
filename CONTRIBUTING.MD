@@ -2,6 +2,10 @@
 
 We're glad you want to contribute to Chef managed community cookbooks! The first step is the desire to improve the project.
 
+## Getting in Contact with Us
+
+If you're interested in contributing to community cookbooks or just have a question about one of our cookbooks we'd love to chat. You can find us in #cookbook-engineering on the [Chef Community Slack](https://community-slack.chef.io/).
+
 ## Submitting Issues
 
 Not every contribution comes in the form of code. Submitting, confirming, and triaging issues is an important task for any project. At Chef we use GitHub to track all project issues.

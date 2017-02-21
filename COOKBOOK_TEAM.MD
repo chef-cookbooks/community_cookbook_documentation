@@ -32,7 +32,7 @@ Unfortunately new functionality comes with a maintenance cost and because of thi
 
 ## Contacting Us
 
-The community cookbook team can be e-mailed directly at [cookbooks@chef.io](mailto:cookbooks@chef.io). You can also find a list of maintainers, some of whom are Chef employees, in each cookbook repository at /MAINTAINERS.md
+If you have questions about our team or our cookbooks feel free to reach us in the #cookbook-engineering channel of the [Chef Community Slack](https://community-slack.chef.io/). You can also find a list of maintainers, some of whom are Chef employees, in each cookbook repository at /MAINTAINERS.md.
 
 ## Getting Involved
 
