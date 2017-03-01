@@ -26,7 +26,7 @@ We have a 3 step process for contributions:
 
 Chef cookbooks are built to last. We strive to ensure high quality throughout the experience. In order to ensure this, all pull requests must meet these specifications:
 
-1. **Tests:** To ensure high quality code and protect against future regressions, we require all cookbook code to be tested in some way. This can be either unit testing with ChefSpec or integration testing with Test Kitchen / Inspec. See the TESTING.md file for additional information on testing in Chef cookbooks and feel free to ask if you need help with the testing process.
+1. **Tests:** To ensure high quality code and protect against future regressions, we require all cookbook code to be tested in some way. This can be either unit testing with ChefSpec or integration testing with Test Kitchen / InSpec. See the TESTING.md file for additional information on testing in Chef cookbooks and feel free to ask if you need help with the testing process.
 2. **Green CI Tests:** We use [Travis CI](https://travis-ci.org/) and/or [AppVeyor](https://www.appveyor.com/) CI systems to test all pull requests. We require these test runs to succeed on every pull request before being merged.
 
 ### Code Review Process
@@ -36,7 +36,7 @@ Code review takes place in GitHub pull requests. See [this article](https://help
 Once you open a pull request, cookbook maintainers will review your code using the built-in code review process in Github PRs. The process at this point is as follows:
 
 1. A cookbook maintainer will review your code and merge it if no changes are necessary. Your change will be merged into the cookbooks's `master` branch and will be noted in the cookbook's `CHANGELOG.md` at the time of release.
-2. If a maintainer has feedback or questions on your changes they they will set `request changes` in the review and provide an explaination.
+2. If a maintainer has feedback or questions on your changes they they will set `request changes` in the review and provide an explanation.
 
 ### Developer Certification of Origin (DCO)
 

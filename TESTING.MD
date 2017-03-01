@@ -64,7 +64,7 @@ Integration testing is performed by Test Kitchen. After a successful converge, t
 
 ## Integration Testing using Vagrant
 
-Integration tests can be performed on a local workstation using either Virtualbox or VMWare as the virtualization hypervisor. To run tests against all available instances run:
+Integration tests can be performed on a local workstation using either VirtualBox or VMWare as the virtualization hypervisor. To run tests against all available instances run:
 
 ```shell
 rake integration:vagrant
