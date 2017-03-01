@@ -1,6 +1,6 @@
 # Cookbook TESTING doc
 
-This document describes the process for testing Chef community cookbooks using ChefDK. Cookbooks can be tested using the test dependencies defined in cookbook Gemfiles alone, but that process will not be covered in this document in order to maintain simplicity.
+This document describes the process for testing Chef community cookbooks using ChefDK.
 
 ## Testing Prerequisites
 
@@ -24,39 +24,35 @@ Update any installed dependencies to the latest versions:
 chef exec bundle update
 ```
 
-## Rakefile
+## Local Delivery
 
-Each cookbook contains a Rakefile which includes a number of tasks, each of which can be ran individually, or in groups. Typing "rake" by itself will perform the default checks: style checks (Rubocop and Foodcritic), and unit tests (Chefspec). To see a complete list of available tasks run `Rake -T`
+For consistent testing across the 100+ Chef managed community cookbooks we use the Delivery CLI tool and the local delivery mode. This allows us to remotely host a single [Delivery project.toml file](https://github.com/chef-cookbooks/community_cookbook_tools/blob/master/delivery/project.toml) that applies to all of our cookbooks.
 
-```
-$ rake -T
-rake integration:             # Run kitchen integration tests
-rake maintainers:generate     # Generate MarkDown version of MAINTAINERS file
-rake spec                     # Run ChefSpec examples
-rake style                    # Run all style checks
-rake style:chef               # Run Chef style checks
-rake style:ruby               # Run Ruby style checks
-rake style:ruby:auto_correct  # Auto-correct RuboCop offenses
-rake supermarket:publish      # Publish cookbook to Supermarket with Stove
-```
+Delivery defines testing in phases and cookbooks utilize `lint`, `syntax`, and `unit` phases.
 
-## Style Testing
-
-Ruby style tests can be performed by Rubocop by issuing either
+To run an individual phase:
 
 ```shell
-rake style:ruby
+delivery local unit
 ```
 
-Chef style/correctness tests can be performed with Foodcritic by issuing either
+To run all phases:
 
 ```shell
-rake style:chef
+delivery local all
 ```
 
-## Spec Testing
+### lint stage
 
-Unit testing is done by running Rspec examples. Rspec will test any libraries, then test recipes using ChefSpec. This works by compiling a recipe (but not converging it), and allowing the user to make assertions about the resource_collection.
+The lint stage runs Ruby specific code linting using cookstyle (<https://github.com/chef/cookstyle>). Cookstyle offers a tailored RuboCop configuration enabling / disabling rules to better meet the needs of cookbook authors. Cookstyle ensures that projects with multiple authors have consistent code styling.
+
+### syntax stage
+
+The syntax stage runs Chef cookbook specific linting and syntax checks with Foodcritic (<http://www.foodcritic.io/>). Foodcritic tests for over 60 different cookbook conditions and helps authors avoid bad patterns in their cookbooks.
+
+## unit stage
+
+The unit stage runs unit testing with ChefSpec (<http://sethvargo.github.io/chefspec/>). ChefSpec is an extension of Rspec, specially formulated for testing Chef cookbooks. Chefspec compiles your cookbook code and converges the run in memory, without actually executing the changes. The user can write various assertions based on what they expect to have happened during the Chef run. Chefspec is very fast, and quick useful for testing complex logic as you can easily converge a cookbook many times in different ways.
 
 ## Integration Testing
 
@@ -67,7 +63,8 @@ Integration testing is performed by Test Kitchen. After a successful converge, t
 Integration tests can be performed on a local workstation using either VirtualBox or VMWare as the virtualization hypervisor. To run tests against all available instances run:
 
 ```shell
-rake integration:vagrant
+chef exec kitchen test
+`
 ```
 
 To see a list of available test instances run:
