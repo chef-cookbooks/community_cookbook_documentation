@@ -4,9 +4,9 @@ The Community Cookbook Team is responsible for improving the [Chef-managed commu
 
 ## Team Members
 
-- Jennifer Davis [sigje@chef.io](mailto:sigje@chef.io)
-- Tim Smith [tsmith@chef.io](mailto:tsmith@chef.io)
-- Seth Thomas [sthomas@chef.io](mailto:sthomas@chef.io)
+- Jennifer Davis 
+- Tim Smith 
+- Seth Thomas 
 
 ## Our Goals
 
@@ -39,6 +39,8 @@ Unfortunately new functionality comes with a maintenance cost and because of thi
 ## Contacting Us
 
 If you have questions about our team or our cookbooks feel free to reach us in the #cookbook-engineering channel of the [Chef Community Slack](https://community-slack.chef.io/).
+
+Our team email address is [cookbooks@chef.io](mailto:cookbooks@chef.io).
 
 ## Getting Involved
 
