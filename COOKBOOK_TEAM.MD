@@ -2,6 +2,12 @@
 
 The Community Cookbook Team is responsible for improving the [Chef-managed community cookbooks](https://github.com/chef-cookbooks) and for working with the community to resolve issues and review / merge pull requests.
 
+## Team Members
+
+- Jennifer Davis [sigje@chef.io](mailto:sigje@chef.io)
+- Tim Smith [tsmith@chef.io](mailto:tsmith@chef.io)
+- Seth Thomas [sthomas@chef.io](mailto:sthomas@chef.io)
+
 ## Our Goals
 
 - Increased velocity of releases for Chef-managed community cookbooks on the Supermarket
@@ -32,7 +38,7 @@ Unfortunately new functionality comes with a maintenance cost and because of thi
 
 ## Contacting Us
 
-If you have questions about our team or our cookbooks feel free to reach us in the #cookbook-engineering channel of the [Chef Community Slack](https://community-slack.chef.io/). You can also find a list of maintainers, some of whom are Chef employees, in each cookbook repository at /MAINTAINERS.md.
+If you have questions about our team or our cookbooks feel free to reach us in the #cookbook-engineering channel of the [Chef Community Slack](https://community-slack.chef.io/).
 
 ## Getting Involved
 
@@ -41,3 +47,8 @@ If you want to get involved, we want to make it as easy as possible. Our contrib
 The Cookbook Engineering team is present in the #cookbook-engineering channel on the [Chef Community Slack](http://community-slack.chef.io/). People are welcome to join and discuss cookbook usage and design.
 
 Discussions about tools and cookbook releases also occur on the [Chef mailing lists on Discourse](https://discourse.chef.io/).
+
+## Events
+
+* Weekly Triage - Tuesday 10:30am PDT
+* [ChefConf 2017](https://chefconf.chef.io/2017/)
