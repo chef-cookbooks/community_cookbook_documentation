@@ -4,9 +4,9 @@ The Community Cookbook Team is responsible for improving the [Chef-managed commu
 
 ## Team Members
 
-- Jennifer Davis 
-- Tim Smith 
-- Seth Thomas 
+- [Jennifer Davis](https://github.com/iennae)
+- [Tim Smith](https://github.com/tas50)
+- [Seth Thomas](https://github.com/cheeseplus)
 
 ## Our Goals
 
