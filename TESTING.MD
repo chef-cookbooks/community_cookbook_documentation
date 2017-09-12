@@ -64,7 +64,6 @@ Integration tests can be performed on a local workstation using either VirtualBo
 
 ```shell
 chef exec kitchen test
-`
 ```
 
 To see a list of available test instances run:
@@ -87,8 +86,10 @@ Images include:
 
 - Windows Server 2008
 - Windows Server 2012
+- Windows Server 2016
 - Windows 7 Professional
 - Windows 8.1 Professional
+- Windows 10 Enterprise
 - Mac OS X 10.7-10.12
 - SLES 12 / 12SP1
 - Solaris 10.11
