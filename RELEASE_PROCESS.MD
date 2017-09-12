@@ -32,9 +32,21 @@ When incrementing a cookbook version, the following conditions will apply:
 
 Many cookbooks have integration tests that run using kitchen-dokken in Travis CI. For these cookbooks we're preforming integration testing on every commit. For others integration tests must be run locally and this should be done before any release to ensure high quality releases.
 
-## Always update the changelog
+## Use Community Cookbook Releaser for version/changelog bumping
 
-Understanding changes between releases is important for users consuming our cookbooks. Each release should include a dated changelog entry that includes detailed descriptions of changes. Breaking changes should be clearly called out, and best effort should be made to describe the impact of changes instead of just including PR titles.
+Bumping versions, writing changelogs, properly formatting dates and versions. It's all repetive and error prone. To aid in releasing cookbooks we created the `community_cookbook_release` gem that provides the `ccr` command for prepping cookbooks for release. This is a fairly simple script packaged as a gem that eliminates some of the manual steps in releasing a cookbook. It prompts you for the new version (autofills a patch bump), bumps the metadata version, and then writes out a changelog with the proper version / date / changes. Why not release the changes also? Well the changelog is auto generated with the title of every commit since the last release and that's often not the most useful list of changes for end users. A well written changelog leaves out trivial changes like formatting changes, and provides deep context for other commits. It's something you can't entirely auto generate. This generated changelog should serve as a starting point which you can edit to appropriately convey the importance of changes to the community.
+
+### Example
+
+```
+# cookbooks/sql_server(git:master)≻ ccr
+Community Cookbook Releaser
+A simple script to aid in version bumps and changelog generation for Chef managed community cookbooks
+
+New version to release [autobump to 5.3.2]:
+
+Version bumped & changelog written out with each commit as an item. Now edit, commit, and release!
+```
 
 ## Use Stove for tag management / file pruning
 
