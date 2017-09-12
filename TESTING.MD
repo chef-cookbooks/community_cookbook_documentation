@@ -84,8 +84,8 @@ Some operating systems have specific licenses that prevent us from making those 
 
 Images include:
 
-- Windows Server 2008
-- Windows Server 2012
+- Windows Server 2008 R2
+- Windows Server 2012 R2
 - Windows Server 2016
 - Windows 7 Professional
 - Windows 8.1 Professional
