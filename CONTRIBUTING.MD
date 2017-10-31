@@ -10,7 +10,7 @@ If you're interested in contributing to community cookbooks or just have a quest
 
 Not every contribution comes in the form of code. Submitting, confirming, and triaging issues is an important task for any project. At Chef we use GitHub to track all project issues.
 
-All of our cookbooks can be found in our [GitHub organization](https://github.com/chef-client/). All cookbooks include GitHub issue templates to help gather information needed for a thorough review.
+All of our cookbooks can be found in our [GitHub organization](https://github.com/chef-cookbooks/). All cookbooks include GitHub issue templates to help gather information needed for a thorough review.
 
 We ask you not to submit security concerns via GitHub. For details on submitting potential security issues please see <https://www.chef.io/security/>
 
@@ -61,7 +61,7 @@ By making a contribution to this project, I certify that:
 
 (b) The contribution is based upon previous work that, to the
     best of my knowledge, is covered under an appropriate open
-    source license and I have the right under that license to   
+    source license and I have the right under that license to
     submit that work with modifications, whether created in whole
     or in part by me, under the same open source license (unless
     I am permitted to submit under a different license), as
