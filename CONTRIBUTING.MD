@@ -4,7 +4,7 @@ We're glad you want to contribute to Chef managed community cookbooks! The first
 
 ## Getting in Contact with Us
 
-If you're interested in contributing to community cookbooks or just have a question about one of our cookbooks we'd love to chat. You can find us in #cookbook-engineering on the [Chef Community Slack](https://community-slack.chef.io/).
+If you're interested in contributing to community cookbooks or just have a question about one of our cookbooks we'd love to chat. You can find us in #cookbook-design on the [Chef Community Slack](https://community-slack.chef.io/).
 
 ## Submitting Issues
 
