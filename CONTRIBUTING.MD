@@ -188,4 +188,4 @@ Also here are some additional pointers to some awesome Chef content:
 
 - [Chef Docs](https://docs.chef.io/)
 - [Learn Chef](https://learn.chef.io/)
-- [Chef Website](https://www.chef.io/)
+- [Chef Website](https://www.chef.sh/)
