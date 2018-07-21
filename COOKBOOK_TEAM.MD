@@ -51,5 +51,4 @@ Discussions about tools and cookbook releases also occur on the [Chef mailing li
 
 ## Events
 
-* Weekly Triage - Tuesday 10:30am PDT
 * [Chef Community Summits](https://www.chef.io/summits/)
