@@ -4,7 +4,7 @@ The Community Cookbook Team is responsible for improving the [Chef-managed commu
 
 ## Team Members
 
-- [Tim Smith](https://github.com/tas50)
+-
 
 ## Our Goals
 
