@@ -36,7 +36,7 @@ Unfortunately new functionality comes with a maintenance cost and because of thi
 
 ## Contacting Us
 
-If you have questions about our team or our cookbooks feel free to reach us in the #cookbook-engineering channel of the [Chef Community Slack](https://community-slack.chef.io/).
+If you have questions about our team or our cookbooks feel free to reach us in the #cookbook-design channel of the [Chef Community Slack](https://community-slack.chef.io/).
 
 Our team email address is [cookbooks@chef.io](mailto:cookbooks@chef.io).
 
