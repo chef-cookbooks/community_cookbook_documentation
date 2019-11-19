@@ -36,7 +36,7 @@ Unfortunately new functionality comes with a maintenance cost and because of thi
 
 ## Contacting Us
 
-If you have questions about our team or our cookbooks feel free to reach us in the #cookbook-engineering channel of the [Chef Community Slack](https://community-slack.chef.io/).
+If you have questions about our team or our cookbooks feel free to reach us in the #cookbook-design channel of the [Chef Community Slack](https://community-slack.chef.io/).
 
 Our team email address is [cookbooks@chef.io](mailto:cookbooks@chef.io).
 
@@ -44,7 +44,7 @@ Our team email address is [cookbooks@chef.io](mailto:cookbooks@chef.io).
 
 If you want to get involved, we want to make it as easy as possible. Our contribution process is documented in [CONTRIBUTING.MD in the Community Cookbook Documentation repository on GitHub](https://github.com/chef-cookbooks/community_cookbook_documentation/blob/master/CONTRIBUTING.MD). Feel free to contact us if you need help or additional details.
 
-The Cookbook Engineering team is present in the #cookbook-engineering channel on the [Chef Community Slack](http://community-slack.chef.io/). People are welcome to join and discuss cookbook usage and design.
+The Cookbook Engineering team is present in the #cookbook-design channel on the [Chef Community Slack](http://community-slack.chef.io/). People are welcome to join and discuss cookbook usage and design.
 
 Discussions about tools and cookbook releases also occur on the [Chef mailing lists on Discourse](https://discourse.chef.io/).
 
