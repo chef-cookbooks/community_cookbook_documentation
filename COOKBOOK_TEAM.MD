@@ -2,10 +2,6 @@
 
 The Community Cookbook Team is responsible for improving the [Chef-managed community cookbooks](https://github.com/chef-cookbooks) and for working with the community to resolve issues and review / merge pull requests.
 
-## Team Members
-
--
-
 ## Our Goals
 
 - Increased velocity of releases for Chef-managed community cookbooks on the Supermarket
@@ -24,11 +20,11 @@ Sometimes applications don't lend themselves to a pure resource model. When that
 
 ### Test Everything
 
-Cookbooks need to be high-quality and often contributions come in from users developing for a single platform. In order to ensure we don't regress functionality or platform support we must test all the things. This includes linting with Cookstyle, unit testing with ChefSpec, and integration testing with Test Kitchen. These tests should run on every pull request (PR) and commit in order to ensure the master stays in a shippable state. For Linux platforms Test Kitchen should be run using kitchen-dokken within Travis CI for integration testing of every PR.
+Cookbooks need to be high-quality and often contributions come in from users developing for a single platform. In order to ensure we don't regress functionality or platform support we must test all the things. This includes linting with Cookstyle, unit testing with ChefSpec, and integration testing with Test Kitchen. These tests should run on every pull request (PR) and commit in order to ensure the master stays in a shippable state. For Linux platforms Test Kitchen should be run using kitchen-dokken within GitHub Actions for integration testing of every PR.
 
 ### Wide platform support
 
-Not everyone runs RHEL and not everyone runs Ubuntu. We aim to provide support for as many platforms as possible. Priority is given to [Foundation Platforms](https://docs.chef.io/platforms.html#chef-client-foundational-platforms) supported by Chef itself.
+Not everyone runs RHEL and not everyone runs Ubuntu. We aim to provide support for as many platforms as possible. Priority is given to [Commercially Supported Chef Infra Platforms](https://docs.chef.io/platforms/#commercial-support).
 
 ### Support the 95% use case
 
@@ -50,4 +46,4 @@ Discussions about tools and cookbook releases also occur on the [Chef mailing li
 
 ## Events
 
-* [Chef Community Summits](https://www.chef.io/summits/)
+- [Chef Community Summits](https://www.chef.io/summits/)

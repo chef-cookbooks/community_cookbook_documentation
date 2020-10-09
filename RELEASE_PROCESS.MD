@@ -10,7 +10,7 @@ Smaller changes incur less risk, and releasing after each contribution ensures w
 
 Infrastructure stability for our users is critical so we aim to release predictably versioned cookbooks. Following Semver allows users to pin cookbook requirements in wrapper cookbooks or environment files, and avoid breaking changes. See <http://semver.org/>
 
-Cookbooks follow a `MAJOR.MINOR.PATCH` versioning scheme based on [Semantic Versioning](http://semver.org/).  
+Cookbooks follow a `MAJOR.MINOR.PATCH` versioning scheme based on [Semantic Versioning](http://semver.org/).
 
 Given a version number `MAJOR.MINOR.PATCH`:
 
@@ -30,7 +30,7 @@ When incrementing a cookbook version, the following conditions will apply:
 
 ## Test Before Releasing
 
-Many cookbooks have integration tests that run using kitchen-dokken in Travis CI. For these cookbooks we're preforming integration testing on every commit. For others integration tests must be run locally and this should be done before any release to ensure high quality releases.
+Many cookbooks have integration tests that run using kitchen-dokken in Github Actions. For these cookbooks we're preforming integration testing on every commit. For others integration tests must be run locally and this should be done before any release to ensure high-quality releases.
 
 ## Use Community Cookbook Releaser for version/changelog bumping
 

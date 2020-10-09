@@ -26,8 +26,8 @@ We have a 3 step process for contributions:
 
 Chef cookbooks are built to last. We strive to ensure high quality throughout the experience. In order to ensure this, all pull requests must meet these specifications:
 
-1. **Tests:** To ensure high quality code and protect against future regressions, we require all cookbook code to be tested in some way. This can be either unit testing with ChefSpec or integration testing with Test Kitchen / InSpec. See the TESTING.md file for additional information on testing in Chef cookbooks and feel free to ask if you need help with the testing process.
-2. **Green CI Tests:** We use [Travis CI](https://travis-ci.org/) and/or [AppVeyor](https://www.appveyor.com/) CI systems to test all pull requests. We require these test runs to succeed on every pull request before being merged.
+1. **Tests:** To ensure high-quality code and protect against future regressions, we require all cookbook code to be tested in some way. This can be either unit testing with ChefSpec or integration testing with Test Kitchen / InSpec. See the TESTING.md file for additional information on testing in Chef cookbooks and feel free to ask if you need help with the testing process.
+2. **Green CI Tests:** We use [GitHub Actions](https://github.com/features/actions) and [Travis CI](https://travis-ci.org/) CI systems to test all pull requests. We require these test runs to succeed on every pull request before being merged.
 
 ### Code Review Process
 
